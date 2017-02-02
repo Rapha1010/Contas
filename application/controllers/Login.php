@@ -12,7 +12,6 @@ class Login extends CI_Controller {
 	public function logado() {
 
 		$this->form_validation->set_rules("senha","senha","required");
-
 		$email = $this->input->post("email");
 		$senha = $this->input->post("senha");
 		$this->load->model("Usuario_model");

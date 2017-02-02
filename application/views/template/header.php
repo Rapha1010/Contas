@@ -44,6 +44,11 @@
   <body>
     <div class="container">
 
+    <?php if ($this->session->userdata("success")): ?>
+    <p class="alert alert-success"><?php echo $this->session->userdata('success'); ?></p>
+    <?php elseif ($this->session->userdata('usuario')): ?>
+    <?php else:  redirect("/"); ?>
+    <?php endif; ?>
       <!-- The justified navigation menu is meant for single line per list item.
            Multiple lines will require custom code not provided by Bootstrap. -->
       <div class="masthead">
@@ -60,8 +65,4 @@
         </nav>
       </div>
 
-	<?php if ($this->session->userdata("success")): ?>
-	<p class="alert alert-success"><?php echo $this->session->userdata('success'); ?></p>
-	<?php elseif ($this->session->userdata('usuario')): ?>
-	<?php else:  redirect("/"); ?>
-	<?php endif; ?>
+
