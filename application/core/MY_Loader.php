@@ -2,10 +2,10 @@
 
 Class MY_Loader extends CI_Loader{
 
-	function template($data) {
+	function template($endereco, $data = null) {
 
 		$this->view("template/header");
-		$this->view($data);
+		$this->view($endereco, $data);
 		$this->view("template/footer");
 	}
 }
