@@ -16,7 +16,6 @@
             </div>
           </div>
           <div class="panel-body">
-          <form role="form">
           <fieldset> 
           <?php 
             $form = new MakeFormIgniter();
@@ -43,7 +42,6 @@
             $form->button();
             $form->formClose();?>
         </fieldset>
-        </form>
         </div>
       </div>
        <?php if ($this->session->userdata('danger')): ?>
