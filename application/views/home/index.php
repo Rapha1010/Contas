@@ -1,33 +1,28 @@
-
-<!-- <div class="panel panel-default">
-	<div class="panel-heading"><h3 class="panel-title">Bem vindo ao Home</h3></div>
-	<div class="panel-body"> -->
-
 	<h3>Home</h3>
 
+	<!--Panel Line Chart-->
 	<div class="panel panel-default">
-	<div class="panel-heading"><h3 class="panel-title">Line Chart</h3></div>
-	<div class="panel-body">
-
-	<div id="line-example" style="height:250px;"></div>
+		<div class="panel-heading"><h3 class="panel-title">Line Chart</h3></div>
+		<div class="panel-body">
+		<div id="line-example" style="height:250px;"></div>
+		</div>
 	</div>
-	</div>
 
+	<!--Panel Bar Chart-->
 	<div class="panel panel-default">
-	<div class="panel-heading"><h3 class="panel-title">Bar Chart</h3></div>
-	<div class="panel-body">
-
-	<div id="bar-example" style="height:250px;"></div> 
+		<div class="panel-heading"><h3 class="panel-title">Bar Chart</h3></div>
+		<div class="panel-body">
+		<div id="bar-example" style="height:250px;"></div> 
+		</div>
 	</div>
-	</div>
 
+	<!--Panel Area Chart-->
 	<div class="panel panel-default">
-	<div class="panel-heading"><h3 class="panel-title">Area Chart</h3></div>
-	<div class="panel-body">
-	<div id="area-example" style="height:250px;"></div>
+		<div class="panel-heading"><h3 class="panel-title">Area Chart</h3></div>
+		<div class="panel-body">
+		<div id="area-example" style="height:250px;"></div>
+		</div>
 	</div>
-	</div>
-
 
 <script>
 	new Morris.Line({
@@ -92,4 +87,3 @@
 	  labels: ['Value']
 	});
 </script>
-
