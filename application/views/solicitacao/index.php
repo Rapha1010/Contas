@@ -2,7 +2,7 @@
 <html>
 <head>
 <link rel="stylesheet" href= <?=base_url('css/bootstrap.css'); ?>>
-	<title>Solicitacao</title>
+	<title>Solicitação</title>
 </head>
 <body>
 <div class="container">

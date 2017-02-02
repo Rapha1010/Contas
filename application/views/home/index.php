@@ -1,26 +1,33 @@
 
-<div class="panel panel-default">
+<!-- <div class="panel panel-default">
 	<div class="panel-heading"><h3 class="panel-title">Bem vindo ao Home</h3></div>
+	<div class="panel-body"> -->
+
+	<h3>Home</h3>
+
+	<div class="panel panel-default">
+	<div class="panel-heading"><h3 class="panel-title">Line Chart</h3></div>
 	<div class="panel-body">
 
 	<div id="line-example" style="height:250px;"></div>
-	<div id="bar-example" style="height:250px;"></div> 
-	<div id="area-example" style="height:250px;"></div>
-
-	<?php
-
-	echo anchor('index.php/Solicitacao/index','Enviar Solicitacao');
-
-	$form = new MakeFormIgniter();
-	$form->formOpen('index.php/Login/logout');
-	$form->value = 'Logout';
-	$form->type = 'submit';
-	$form->class = 'btn btn-primary';
-	$form->button();
-
-	?>
 	</div>
-</div>
+	</div>
+
+	<div class="panel panel-default">
+	<div class="panel-heading"><h3 class="panel-title">Bar Chart</h3></div>
+	<div class="panel-body">
+
+	<div id="bar-example" style="height:250px;"></div> 
+	</div>
+	</div>
+
+	<div class="panel panel-default">
+	<div class="panel-heading"><h3 class="panel-title">Area Chart</h3></div>
+	<div class="panel-body">
+	<div id="area-example" style="height:250px;"></div>
+	</div>
+	</div>
+
 
 <script>
 	new Morris.Line({

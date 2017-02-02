@@ -3,20 +3,20 @@
 <head>
 <meta charset="utf-8">
 <link rel="stylesheet" href=<?=base_url('css/bootstrap.css'); ?>>
-   <title>Relação Lojista & Empreendedor</title>
+   <title>Contas </title>
 </head>
 <body>
 <div class="container">
     <div class="row">
-    <div class="flex-align">
-      <div class="col-md-4 col-md-offset-4">
+      <div class="col-md-4 col-md-offset-4" style="position:relative; top:150px;">
       <div class="login-panel panel panel-default">
         <div class="panel-heading">
           <div class="panel-title">
-          Relação Lojista & Empreendedor
+          Contas 
             </div>
           </div>
           <div class="panel-body">
+          <form role="form">
           <fieldset> 
           <?php 
             $form = new MakeFormIgniter();
@@ -43,17 +43,15 @@
             $form->button();
             $form->formClose();?>
         </fieldset>
+        </form>
         </div>
       </div>
-
        <?php if ($this->session->userdata('danger')): ?>
         <p class="alert alert-danger"><?php echo $this->session->userdata('danger'); ?></p>
         <?php endif ?>
         <?php if ($this->session->userdata('success')): ?>
         <p class="alert alert-success"><?php echo $this->session->userdata('success'); ?></p>
         <?php endif ?>
-
-    </div>
     </div>
   </div>
 </div>
